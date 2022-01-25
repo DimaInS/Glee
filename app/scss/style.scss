@@ -253,12 +253,50 @@
 
   &__nav-ink {
      @extend %footer-font;
-     
-     
+  }
 }
 
-
-
+.top-slider{
+  
+  &__top{
+   
+  }
+  &__top-item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  &__top-content{
+     padding: 225px 15px 280px;
+     max-width: 1170px;
+     margin: 0 auto;
+  }
+  &__top-title{
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    @extend %rubik-500;
+    margin-bottom: 45px;
+    max-width: 415px;
+  }
+  &__top-text{
+    @extend %rubik-400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $menu-color;
+    max-width: 370px;
+    margin-bottom: 20px;
+}
+  &__top-btn{
+    display: block;
+    width: 200px;
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    color: #fff;
+    background-color: $accent-color;
+    padding: 24px 98px 24px 28px;
+  }
 }
 
 
