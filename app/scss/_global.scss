@@ -1,12 +1,27 @@
-
+html,
+body{
+  height: 100%;
+}
 
 body{
   @extend %dm-500;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
-.container{
+.main {
+  flex-grow: 1;
+}
+
+.container-max{
   max-width: 1800px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-min {
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }

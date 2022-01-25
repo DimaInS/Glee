@@ -28,4 +28,13 @@
   font-weight: 400;
 }
 
+%footer-font {
+  font-size: 14px;
+  line-height: 24px;
+  color: #7b7b7b;
+  @extend %rubik-400;
+}
+
 $menu-color: #436372;
+$accent-color: #a3bbc8;
+$link-color: #7b7b7b;
