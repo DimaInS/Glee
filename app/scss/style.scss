@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
@@ -296,6 +297,42 @@
     color: #fff;
     background-color: $accent-color;
     padding: 24px 98px 24px 28px;
+    position: relative;
+    &::after{
+      content: '';
+      background: url('../images/icon/btn-arrow.svg') 0 0 no-repeat;
+      position: absolute;
+      top: 25px;
+      right: 16px;
+      width: 23px;
+      height: 10px;
+    }
+  }
+  .slick-dots{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: -74px;
+    li{
+      margin-right: 10px;
+      button{
+        background-color: #fde3cc;
+        border: none;
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        font-size: 11px;
+        line-height: 9px;
+        @extend %rubik-500;
+        color: #243f4d;
+      }
+      &.slick-active{
+        button{
+          background-color: #fff;
+        }
+      }
+    }
   }
 }
 
