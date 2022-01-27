@@ -25,3 +25,10 @@ body{
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.title{
+  font-size: 36px;
+  line-height: 1.2;
+  @extend %dm-700;
+  color: $title-color;
+}
