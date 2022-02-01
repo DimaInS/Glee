@@ -31,4 +31,9 @@ body{
   line-height: 1.2;
   @extend %dm-700;
   color: $title-color;
+  text-align: center;
+}
+
+.mixitup-control-active {
+  color: $title-color;
 }

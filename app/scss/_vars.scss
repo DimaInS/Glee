@@ -4,6 +4,8 @@
   font-weight: 700;
 }
 
+
+
 %dm-400 {
   font-family: 'DM Sans',
     sans-serif;
@@ -26,6 +28,12 @@
   font-family: 'Rubik',
     sans-serif;
   font-weight: 400;
+}
+
+%pop-700 {
+  font-family: 'Poppins',
+    sans-serif;
+  font-weight: 700;
 }
 
 %footer-font {
@@ -56,6 +64,16 @@
       height: 10px;
     }
   
+}
+
+%mix-btn {
+  border: none;
+  background-color: transparent;
+  @extend %dm-700;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #7b7b7b;
 }
 
 $menu-color: #436372;
