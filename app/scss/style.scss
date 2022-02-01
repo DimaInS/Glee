@@ -815,6 +815,36 @@
 
 }
 
+.about{
+  padding-top: 120px;
+  &__inner{
+    display: flex;
+  }
+  &__content{
+    padding: 70px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 30px;
+    }
+  
+  &__years{
+    display: flex;
+    margin-bottom: 25px;
+    @extend %rubik-400;
+    font-size: 140px;
+    line-height: 32px;
+    color: $accent-color;
+    
+  }
+  &__years-item{
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+  }
+    
+}
+
 
 
 @import 'media';
