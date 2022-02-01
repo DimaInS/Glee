@@ -606,6 +606,7 @@
 
 .blog{
   padding-top: 110px;
+  margin-bottom: -170px;
   &__inner{
     position: relative;
   }
@@ -699,13 +700,28 @@
   background-color: #fcd7b6;
   height: 437px;
   padding: 264px 0 92px;
-  margin-top: -170px;
+ 
   &__items{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
+
+.top{
+  background-color: #edf1f4;
+  padding: 30px 0;
+  &__title{
+    font-family: Rubik;
+    font-size: 36px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #222933;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
 
 
 @import 'media';
