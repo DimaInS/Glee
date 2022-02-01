@@ -785,6 +785,36 @@
   }
 }
 
+.terms{
+  padding-top: 115px;
+  @extend %rubik-400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #243f4d;
+  &__title{
+    font-size: 24px;
+    line-height: 40px;
+    @extend %rubik-500;
+    margin-bottom: 25px;
+  }
+  &__list{
+    margin-bottom: 75px;
+    list-style-type: decimal-leading-zero;
+    }
+    &__list-item{
+      margin-bottom: 15px;
+    }
+  
+  
+  &__text{
+    margin-bottom: 65px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
 
 
 @import 'media';
