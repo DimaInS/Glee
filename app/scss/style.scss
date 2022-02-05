@@ -1076,5 +1076,74 @@
 
 }
 
+.prodlist{
+  padding-top: 120px;
+  &__inner{
+    display: flex;
+  }
+  &__filters{
+    width: 270px;
+    margin-right: 30px;
+  }
+}
+
+.filter{
+  &__item{
+    margin-bottom: 65px;
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 43px;
+    color: #243f4d;
+  }
+  &__title{
+    @extend %dm-700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #243f4d;
+    margin-bottom: 25px;
+    padding-right: 54px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 8px;
+      right: 0;
+      width: 39px;
+      height: 3px;
+      background-color: $accent-color;
+      border-radius: 1px;
+    }
+  }
+}
+
+.filter-category{
+  &__label{
+    display: block;
+    cursor: pointer;
+  }
+  &__input{
+    @extend %check-hide;
+    &:checked + .filter-category__checkbox {
+      background-color: rgba(#a3bbc8, 0.2);
+    }
+  }
+  &__checkbox {
+    background-color: #fff;
+    padding: 0 20px 0 15px;
+    height: 43px;
+    border-radius: 5px;
+    position: relative;
+    &::after{
+      content: '';
+      background: url('../images/icon/categ-arrow.svg') 0 0 no-repeat;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      width: 9px;
+      height: 13px;
+    }
+  }
+}
+
 
 @import 'media';
