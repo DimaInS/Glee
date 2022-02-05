@@ -30,10 +30,28 @@
   font-weight: 400;
 }
 
+%rubik-300 {
+  font-family: 'Rubik',
+    sans-serif;
+  font-weight: 300;
+}
+
+%rubik-700 {
+  font-family: 'Rubik',
+    sans-serif;
+  font-weight: 700;
+}
+
 %pop-700 {
   font-family: 'Poppins',
     sans-serif;
   font-weight: 700;
+}
+
+%pop-600 {
+  font-family: 'Poppins',
+    sans-serif;
+  font-weight: 600;
 }
 
 %footer-font {
@@ -76,6 +94,10 @@
   color: #7b7b7b;
 }
 
+
+
+
+$bg-color: #fcd7b6;
 $menu-color: #436372;
 $accent-color: #a3bbc8;
 $link-color: #7b7b7b;
