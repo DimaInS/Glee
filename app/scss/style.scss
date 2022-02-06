@@ -1100,6 +1100,7 @@
     font-size: 18px;
     line-height: 1.2;
     color: #243f4d;
+    text-transform: uppercase;
     margin-bottom: 25px;
     padding-right: 54px;
     position: relative;
@@ -1142,6 +1143,116 @@
       width: 9px;
       height: 13px;
     }
+  }
+}
+
+.filter-price{
+  &__label{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: -15px;
+  }
+}
+/*стили для линии слайдера диапазона цен*/
+.irs--flat .irs-line {
+  height: 2px;
+  top: 10px;
+  background-color: rgba(#a3bbc8, 0.65);
+  border-radius: 1px;
+}
+/*стили для красной линии слайдера диапазона цен*/
+.irs--flat .irs-bar {
+  top: 9px;
+  height: 4px;
+  background-color: $accent-color;
+}
+/*стили для ползунков слайдера диапазона цен*/
+.irs--flat .irs-handle {
+  top: 3px;
+  width: 15px;
+  height: 15px;
+  background-color: $accent-color;
+}
+/*убирает красные вертикальные полосы на ползунках*/
+.irs--flat .irs-handle>i:first-child {
+  display: none;
+}
+/*убираются ценники над ползунками*/
+.irs-from,
+.irs-to,
+.irs-single {
+  display: none;
+}
+
+/*убираются надписи для мин и макс цены*/
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none;
+}
+/*прижимается ползунки к кнопке для того чтобы точно выставить 
+марджин боттом*/
+.irs-flat {
+  height: 30px;
+}
+
+.filter-brands{
+  &__label{
+    display: block;
+    cursor: pointer;
+  }
+  &__input{
+    @extend %check-hide;
+
+    &:checked+.filter-brands__checkbox {
+      background-color: rgba(#a3bbc8, 0.2);
+    }
+  }
+  &__checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 20px 0 15px;
+    height: 43px;
+    border-radius: 5px;
+  }
+}
+
+.filter-recent{
+  &__item{
+    display: flex;
+    color: #333333;
+    margin-bottom: 25px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__img-border{
+    width: 71px;
+    height: 71px;
+    background-color: rgba(255, 255, 255, 0.96);
+    border: 2px solid #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  &__title{
+    margin-bottom: 35px;
+  }
+  &__position{
+    font-size: 14px;
+    line-height: 15px;
+    
+    margin-bottom: 10px;
+  }
+  &__price{
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 27px;
+    
+    
   }
 }
 
