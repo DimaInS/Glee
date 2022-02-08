@@ -1,4 +1,20 @@
 $(function() {
+
+   $('.prodlist-content__filter-btn').on('click', function() {
+    
+      $('.prodlist-content__filter-btn').removeClass('prodlist-content__filter-btn--active');
+      $(this).addClass('prodlist-content__filter-btn--active');
+  });
+
+  $('.button-list').on('click', function() {
+      $('.prodlist-content__item').addClass('prodlist-content__item--list');
+  });
+
+  $('.button-grid').on('click', function() {
+      $('.prodlist-content__item').removeClass('prodlist-content__item--list');
+  });
+
+
   $(".star").rateYo({
     readOnly: true,
     starWidth: "12px",
