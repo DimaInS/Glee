@@ -1662,7 +1662,7 @@
       margin-right: 16px;
     }
 
-    &__aside-post-title {
+    &__aside-post-title{
       display: block;
       font-size: 14px;
       line-height: 20px;
@@ -1688,7 +1688,91 @@
         height: 14px;
       }
     }
+    .pagination{
+      justify-content: start;
+    }
   }
+
+  .blog-one{
+    &__item{
+      h4{
+      @extend %rubik-400;
+      font-size: 36px;
+      line-height: 26px;
+      margin: 41px 0 34px;
+      color: #333333;
+    }
+    h6{
+      @extend %rubik-500;
+      line-height: 30px;
+      margin-bottom: 15px;
+      color: #243f4d;
+      font-size: 16px;
+    }
+    p{
+       @extend %rubik-400;
+       line-height: 30px;
+       
+       color: #243f4d;
+    }
+    figure {
+      padding: 20px 100px 20px 40px;
+      background-color: rgba(#a3bbc8, 0.2);
+      border-left: 7px solid $accent-color;
+       @extend %rubik-400;
+       line-height: 30px;
+       margin: 43px 0;
+       color: #243f4d;
+       margin-bottom: 45px;
+    }
+    blockquote{
+      margin-bottom: 10px;
+    }
+    figcaption{
+      position: relative;
+      padding-left: 42px;
+      &::before{
+        content: '';
+        width: 20px;
+        height: 4px;
+        background-color: #a3bbc8;
+        position: absolute;
+        bottom: 11px;
+        left: 0;
+        
+      }
+    }
+    h5{
+        @extend %rubik-500;
+        line-height: 30px;
+        font-size: 18px;
+        color: #243f4d;
+        margin-bottom: 25px;
+      }
+  }
+  &__box{
+    display: flex;
+    margin-bottom: 43px;
+    &-img{
+      width: 323px;
+      height: 210px;
+      object-fit: cover;
+      
+    }
+    &-text{
+       padding: 30px 0;
+      margin-left: 30px;
+    }
+    p{
+      @extend %rubik-400;
+     line-height: 30px;
+     color: #565872;
+    }
+  }
+  
+  
+}
+    
 
   
 
