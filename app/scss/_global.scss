@@ -64,7 +64,7 @@ body{
        width: 14px;
        height: 1px;
        background-color: rgba(#222933, 0.6);
-       transform: rotate(260deg);
+       transform: rotate(102deg);
      }
       &:last-child {
         padding-right: 0;
@@ -114,6 +114,7 @@ body{
     transition: all 0.3s;
     &--active{
       background-color: $accent-color;
+      color: #fff;
     }
     
   }

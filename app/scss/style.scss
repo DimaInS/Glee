@@ -1523,6 +1523,7 @@
       width: 830px;
       height: 501px;
       object-fit: cover;
+     
     }
 
     &__content-info {
@@ -1546,8 +1547,7 @@
       position: relative;
       &::before{
         content: '';
-        
-        position: absolute;
+         position: absolute;
         top: 7px;
         left: 0;
         width: 12px;
@@ -1569,35 +1569,125 @@
       }
     }
 
-    &__content-title {}
+    &__content-title {
+      @extend %rubik-400;
+      font-size: 36px;
+      line-height: 26px;
+      margin: 41px 0 34px;
+      color: #333333;
+      display: block;
+    }
 
-    &__content-text {}
+    &__content-text {
+      @extend %rubik-400;
+      line-height: 30px;
+      color: #243f4d;
+      margin-bottom: 30px;
+    }
 
-    &__content-btn {}
+    &__content-btn {
+      display: inline-block;
+      width: 180px;
+      height: 60px;
+      border: 1px solid #a3bbc8;
+      font-size: 15px;
+      line-height: 12px;
+      font-weight: 700;
+      color: #a3bbc8;
+      padding: 20px 75px 25px 20px;
+      position: relative;
+       &::after {
+         content: '';
+         background: url("../images/icon/grey_arrow.svg") 0 0 no-repeat;
+         position: absolute;
+         top: 20px;
+         right: 16px;
+         width: 25px;
+         height: 10px;
+       }
+    }
 
     &__aside {}
 
-    &__aside-item {}
+    &__aside-item {
 
-    &__search-form {}
+    }
 
-    &__search-input {}
+    &__search-form {
+      display: flex;
+      margin-bottom: 60px;
+    }
 
-    &__search-btn {}
+    &__search-input {
+      height: 43px;
+      border: 1px solid #edf1f4;
+      border-right: none;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      padding: 6px;
+    }
+
+    &__search-btn {
+      width: 48px;
+      height: 43px;
+      background-color: #edf1f4;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+     
+    }
 
     &__aside-title {}
 
-    &__aside-posts {}
+    &__aside-posts {
+      
+    }
 
-    &__aside-post {}
+    &__aside-post {
+      display: flex;
+      margin-bottom: 22px;
+      @extend %rubik-400;
+    }
+    
 
     &__aside-img-link {}
 
-    &__aside-img {}
+    &__aside-img {
+      min-width: 71px;
+      height: 71px;
+      object-fit: cover;
+      margin-right: 16px;
+    }
 
-    &__aside-post-title {}
+    &__aside-post-title {
+      display: block;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+      
+    }
 
-    &__aside-post-date {}
+    &__aside-post-date {
+      display: block;
+      font-size: 12px;
+      line-height: 30px;
+      font-weight: 400;
+      color: #9a9a9a;
+      padding-left: 18px;
+      position: relative;
+      &::before {
+        content: '';
+        background: url('../images/icon/calendar-grey.svg') 0 0 no-repeat;
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 12px;
+        height: 14px;
+      }
+    }
   }
 
   
