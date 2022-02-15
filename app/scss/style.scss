@@ -660,7 +660,7 @@
 
   &__link {
     position: absolute;
-    top: 0;
+    top: 25px;
     right: 0;
     @extend %dm-700;
     font-size: 16px;
@@ -2036,8 +2036,118 @@
 }
 
 
+.contact {
+ padding-top: 120px;
+  &__inner {}
+
+  &__top {
+    text-align: center;
+    
+  }
+
+  &__top-suptitle {
+    @extend %pop-700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #a3bbc8;
+    margin-bottom: 10px;
+  }
+
+  &__top-title {
+    @extend %dm-700;
+    font-size: 35px;
+    line-height: 57px;
+    color: #436372;
+    margin-bottom: 60px;
+  }
+
+  &__top-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+
+  &__top-item {
+    max-width: 370px;
+    width: 100%;
+    height: 383px;
+    background-color: #fbfbfb;
+    padding-top: 70px;
+    transition: all 0.4s;
+    &:hover{
+      border: 2px solid #a3bbc8;
+    }
+    &:hover .contact__top-icon {
+      background-color: $accent-color;
+      path{
+        fill:#fff;
+      }
+    }
+  }
+
+  &__top-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    border-radius: 20px;
+    transition: all 0.4s;
+    margin-bottom: 60px;
+    
+  }
+ &__top-item-title {
+   @extend %dm-700;
+   font-size: 20px;
+   line-height: 26px;
+   color: #222222;
+   margin-bottom: 20px;
+ }
+
+  &__top-link {
+    display: block;
+    @extend %rubik-400;
+    line-height: 30px;
+    color: #565872;
+    
+  }
+
+  &__bottom {}
+
+  &__bottom-inner {
+    display: flex;
+
+  }
+}
 
 
+.contact-form {
+  margin-right: 50px;
+  max-width: 620px;
+  &__input {
+    max-width: 300px;
+    background-color: rgba(#f5f5f5, 0.5);
+    margin-bottom: 25px;
+  }
+
+  &__textarea {
+    background-color: rgba(#f5f5f5, 0.5);
+    min-height: 175px;
+  }
+
+  &__button {
+    width: 200px;
+    border-radius: 5px;
+  }
+}
+
+#map {
+  width: 500px;
+  height: 335px;
+}
 
 
 
