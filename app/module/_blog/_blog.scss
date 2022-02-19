@@ -1,0 +1,101 @@
+.blog {
+  padding-top: 110px;
+  margin-bottom: -170px;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 45px;
+  }
+
+  &__link {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    @extend %dm-700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #262626;
+    padding-right: 16px;
+
+    &::after {
+      content: '';
+      background: url('../images/icon/blog-link.svg') 0 0 no-repeat;
+      position: absolute;
+      top: 2px;
+      right: 0;
+      width: 9px;
+      height: 12px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 370px;
+    width: 100%;
+    height: 420px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  &__item-content {
+    max-width: 315px;
+    margin: -15px auto 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 185px;
+  }
+
+  &__category {
+    width: 103px;
+    height: 30px;
+    background-color: $accent-color;
+    border-radius: 15px;
+    @extend %pop-700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    padding: 5px 30px;
+  }
+
+  &__item-title {
+    @extend %dm-500;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 20px 0 auto;
+    color: #262626;
+    display: block;
+  }
+
+  &__info {
+    border-top: 1px solid #e0e0e0;
+    padding: 12px 0;
+
+  }
+
+  &__info-item {
+    font-size: 12px;
+    line-height: 30px;
+    @extend %rubik-400;
+    color: #222933;
+
+    &--date {
+      margin-right: 30px;
+    }
+  }
+
+
+
+}

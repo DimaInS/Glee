@@ -1,4 +1,22 @@
 $(function() {
+    $('.shop-slide__thumb').slick({
+        asNavFor:  '.shop-slide__big',
+        focusOnSelect: true,
+        slidesToShow: 3,
+        slidesToscroll: 1, 
+        vertical: true,
+        draggable: false
+  });
+    $('.shop-slide__big').slick({
+        asNavFor: '.shop-slide__thumb',
+        draggable: false,
+        arrows: false,
+        fade: true,
+       
+  });
+
+
+
     $('.products__wrapper-link').on('click', function(e) {
        e.preventDefault();
       $('.products__wrapper-link').removeClass('products__wrapper-link--active');

@@ -1,0 +1,113 @@
+.header {
+  padding: 20px 0;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  &__img {
+    display: inline-block;
+  }
+
+  &__span {
+    font-size: 36px;
+    line-height: 58px;
+    color: $menu-color;
+    @extend %rubik-500;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item+.menu__list-item {
+    padding-left: 35px;
+  }
+
+  &__list-link {
+    font-size: 15px;
+    line-height: 12px;
+    color: $menu-color;
+    @extend %rubik-500;
+  }
+}
+
+.header__menu {
+  margin-left: auto;
+  margin-right: 330px;
+}
+
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 318px;
+  align-items: center;
+
+  &__link {
+    position: relative;
+  }
+
+  &__link.user-nav__link--search {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: #edf1f4;
+  }
+
+  &__img {
+    position: absolute;
+    max-width: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__link-box {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 178px;
+    height: 51px;
+    border-radius: 26px;
+    background-color: #fcd7b6;
+
+    &::before {
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      top: 9px;
+      left: 50%;
+      width: 1px;
+      height: 31px;
+    }
+  }
+
+  &__link.user-nav__link--dial {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: #a3bbc8;
+  }
+
+  &__span {
+    position: absolute;
+    top: 8px;
+    right: -18px;
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    line-height: 16px;
+    color: #243f4d;
+    @extend %dm-400;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
