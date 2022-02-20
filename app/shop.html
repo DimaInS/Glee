@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glee</title>
   <link rel="stylesheet" href="css/shop.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  
   
 </head>
 
@@ -87,13 +89,15 @@
       </div>
     </section>
 
-   <section class="shop">
+  <section class="shop">
   <div class="container-min">
     <div class="shop__inner">
       <div class="shop__details">
-        <div class="shop__sliders">
+        <div class="shop-slide">
           <div class="shop-slide__thumb">
-            <div class="shop-slide__thumb-item"><img class="shop-slide__thumb-img" src="images/shop/1.jpg" alt="thumb images"></div>
+            <div class="shop-slide__thumb-item">
+              <img class="shop-slide__thumb-img" src="images/shop/1.jpg" alt="thumb images">
+            </div>
             <div class="shop-slide__thumb-item"><img class="shop-slide__thumb-img" src="images/shop/1.jpg" alt="thumb images"></div>
             <div class="shop-slide__thumb-item"><img class="shop-slide__thumb-img" src="images/shop/1.jpg" alt="thumb images"></div>
           </div>
@@ -110,7 +114,7 @@
           <h3 class="shop__details-title">
             Pendant lamp
           </h3>
-          <div class="stars-details"></div>
+          <div class="stars-details" data-rateyo-rating="4"></div>
           <span class="shop__details-price">
             23$
           </span>
@@ -155,11 +159,14 @@
           <a class="shop-tabs__top-btn" href="#">Reviews (2)</a>
         </div>
         <div class="shop-tabs__content">
-          <div class="shop-tabs__content-item">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          <div class="shop-tabs__content-item">
+            <p class="shop-tabs__content-text">
+               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
             ex ea commodo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
+            </p>
           </div>
           <div class="shop-tabs__content-item">
             content222222222222222222222222222
@@ -170,7 +177,7 @@
         </div>
       </div>
       <div class="shop-related">
-        <h4 class="shop-related-title">
+        <h4 class="shop-related__title">
           Related products
         </h4>
         <div class="shop-related__items">
@@ -765,7 +772,10 @@
     </div>
   </div>
 </section>
-   <section class="blog">
+
+
+  
+    <section class="blog">
        <div class="container-min">
          <div class="blog__inner">
            <h2 class="blog__title title">
