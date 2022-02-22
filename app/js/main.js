@@ -1,4 +1,25 @@
 $(function() {
+
+  $('.shop-related__items').slick({
+     slidesToShow: 4,
+        slidesToscroll: 1,
+        infinite: false,
+        prevArrow: '<button type="button" class="slick-prev"><img src="images/icon/arrow-prev.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="images/icon/arrow-next.svg"</button>'
+  })
+
+  $('.shop-tabs__top-btn').on('click', function(e) {
+     e.preventDefault();
+    $('.shop-tabs__top-btn').removeClass('shop-tabs__top-btn--active');
+    $(this).addClass('shop-tabs__top-btn--active');
+
+    $('.shop-tabs__content-item').removeClass('shop-tabs__content-item--active');
+    $($(this).attr('href')).addClass('shop-tabs__content-item--active');
+
+    
+  })
+
+
   $('.shop__details-input').styler();
 
 

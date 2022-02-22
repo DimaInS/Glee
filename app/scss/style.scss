@@ -1336,6 +1336,7 @@
 
   &__details {
     display: flex;
+    padding-bottom: 120px;
   }
 
   &__details-content {
@@ -1356,8 +1357,9 @@
     margin-bottom: 30px;
     font-size: 30px;
     line-height: 45px;
-    
+    padding-top: 30px;
     color: #333333;
+    display: block;
   }
 
   &__details-text {
@@ -1365,25 +1367,58 @@
     line-height: 30px;
     margin-bottom: 15px;
     color: #243f4d;
+    margin-bottom: 15px;
   }
 
-  &__details-form {}
+  &__details-form {
+    padding-top: 15px;
+  }
 
-  &__details-input {}
+  &__details-input {
+    
+  }
 
   &__details-btn {
+    display: inline-block;
+    border: none;
     margin-left: 15px;
+    width: 208px;
+    height: 53px;
+    background-color: #a3bbc8;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: #ffffff;
+    margin-bottom: 55px;
   }
 
   &__details-list {}
 
-  &__details-item {}
+  &__details-item {
+    display: flex;
+    font-family: Rubik;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #243f4d;
 
-  &__details-item-title {}
+  }
+
+  &__details-item-title {
+    margin-right: 5px;
+  }
 
   &__details-item-text {}
 
-  &__details-item-link {}
+  &__details-item-link {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    
+    color: #243f4d;
+  }
 }
 
 .jq-number__field {
@@ -1398,7 +1433,6 @@
   height: 53px;
   border: none;
   outline: none;
-  
   font-size: 15px;
   line-height: 45px;
   @extend %rubik-400;
@@ -1412,33 +1446,39 @@
 }
 .jq-number__spin {
   position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: red;
+  width: 50px;
+  height: 53px;
+  top: 2px;
   cursor: pointer;
 }
 .jq-number__spin.minus{
-  
-  left: 20px;
+  border-right: 1px solid #a3bbc8;
+  left: 0px;
   
 }
 .jq-number__spin.plus {
-
-  right: 20px;
+  border-left: 1px solid #a3bbc8;
+  right: 0px;
 
 }
 .jq-number__spin:after {
   content: "";
   position: absolute;
-  top: 0;
-  // right: -40px;
-  width: 7px;
+  top: 25px;
+  right: 20px;
+  width: 8px;
   height: 2px;
   background-color: #333333;
 }
 
-.jq-number__spin.minus:after{
-  // left: -60px;
+.jq-number__spin.plus::before{
+  content: '';
+  position: absolute;
+  top: 22px;
+  right: 23px;
+  width: 2px;
+  height: 8px;
+  background-color: #333333;
 }
 
 .shop-slide {
@@ -1492,25 +1532,102 @@
 .stars-details {}
 
 .shop-tabs {
+  padding-bottom: 120px;
+  &__top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
 
-  &__top {}
-
-  &__top-btn {}
-
-  &__content {}
-
-  &__content-item {}
+  &__top-btn {
+    display: inline-block;
+    text-align: center;
+    margin-left: 12px;
+    padding: 6px;
+    width: 241px;
+    height: 53px;
+    background-color: rgba(#a3bbc8, 0.2);
+    border-radius: 5px;
+    @extend %rubik-500;
+    font-size: 18px;
+    line-height: 40px;
+    color: #243f4d;
+    transition: all 0.3s;
+    cursor: pointer;
+    &--active{
+      background-color: #a3bbc8;
+      color: #fff;
+    }
+  }
+  
+  &__content {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    
+  }
+ 
+&__content-item {
+    display: none;
+    &.shop-tabs__content-item--active{
+      display: block;
+    }
+  }
 
   &__content-text {}
 }
 
 .shop-related {
 
-  &__title {}
+  &__title {
+    @extend %dm-700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #243f4d;
+    margin-bottom: 70px;
+  }
 
-  &__items {}
+  &__items {
+    // max-width: 1170px;
+    // width: 100%;
+  }
 
-  &__item {}
+  &__item {
+    height: 420px;
+  }
+
+  .products__content-item{
+  min-height: 380px;
+}
+
+.products__content-links{
+  transform: translateY(350%);
+}
+
+.slick-arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  padding: 0;
+  position: absolute;
+  top: -115px;
+  right: 25px;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s;
+  border: 2px solid #a3bbc8;
+  border-radius: 5px;
+  cursor: pointer;
+  &.slick-disabled{
+     border: 2px solid rgba(#a3bbc8, 0.2);
+  }
+}
+.slick-arrow.slick-prev{
+  right: 95px;
+}
 }
 
 
