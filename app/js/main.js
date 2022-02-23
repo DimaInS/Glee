@@ -1,4 +1,9 @@
 $(function() {
+   $('.footer-top__title').on('click', function(){ //сворачивает список под заголовком
+    $(this).next().slideToggle();
+    $(this).toggleClass('active');
+  });
+
   $('.menu__burger').on('click', function(){
     $('.menu__list').toggleClass('menu__list--active')
   });

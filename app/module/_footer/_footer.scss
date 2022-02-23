@@ -61,12 +61,20 @@
   &__form {
     width: 270px;
   }
+  &__form-title {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #1f2044;
+    @extend %dm-700;
+    text-transform: uppercase;
+  }
 }
 
 
 
 .footer-form {
-
+  
   &__text {
     @extend %footer-font;
     margin-bottom: 30px;
@@ -105,6 +113,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   height: 90px;
 
   &__nav {}
@@ -143,14 +152,77 @@
 
 @media (max-width: 1100px){
   .footer-top{
-    &__item {
+    justify-content: flex-start;
+    &__form,
+    &__contact{
+    order: -1;
+     
+       
+    }
+    &__contact{
+      width: 240px;
+    }
+
+    &__nav{
+      width: 100%;
+      margin-top: 30px;
+    .footer-top__list {
+     display: none;
+     /*сворачивает список под заголовком. разворачиваем смотри js*/
+   }
+
+    .footer-top__title {
+     pointer-events: auto;
+     /*Восстанавливает функциональность элемента по умолчанию. тут применяется для того чтобі включить возможность разворачивать список*/
+     position: relative;
+     display: inline-block;
+     cursor: pointer;
+     padding-right: 15px;
+     margin-bottom: 0;
+     
+     &::after{
+      content: '+';
+      color: #1f2044;
+      position: absolute;
+      font-size: 22px;
+      top: -2px;
+      right: 0;
+      } 
+    }
+    .footer-top__title.active{
+      &::after{
+        content: '-';
+      }
+    }
+    }
+
+    
+  }
+   
+}
+@media (max-width: 768px) {
+  .footer-top{
+    padding: 60px 0 20px;
+  }
+}
+
+@media (max-width: 660px) {
+  .footer-bottom{
+    &__nav{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 556px){
+  .footer-top{
+    &__contact{
+      margin-bottom: 30px;
+    }
+    &__title{
+      margin-bottom: 10px
       
     }
-      
-     &__contact,
-      &__form{
-        order: -1;
-      }
-
-}
+    
+  }
 }
