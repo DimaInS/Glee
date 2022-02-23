@@ -9,6 +9,7 @@
   &__filter-btn {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 75px;
   }
 
@@ -32,8 +33,8 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 270px;
-    height: 380px;
+    max-width: 270px;
+    min-height: 380px;
     background-color: #ffffff;
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
     border-radius: 10px;
@@ -68,7 +69,7 @@
 
   &__content-links {
     position: absolute;
-    transform: translateY(300%);
+    transform: translateY(500%);
     transition: all 0.5s;
     left: 0;
     right: 0;
@@ -86,6 +87,44 @@
       circle {
         fill: #a3bbc8;
       }
+    }
+  }
+}
+
+@media (max-width: 1100px){
+  .products{
+    &__content{
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px 20px;
+    }
+    &__content-item{
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 768px){
+  .products {
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px 10px;
+    }
+  }
+}
+
+@media (max-width: 556px){
+  .products {
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+      
+    }
+    &__filter-btn{
+      margin-bottom: 35px;
+    }
+    &__btn{
+      margin-bottom: 10px;
+    }
+    .products__btn+.products__btn {
+      margin-left: 20px;
     }
   }
 }

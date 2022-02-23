@@ -122,3 +122,10 @@ body{
     width: 75px;
     }
   }
+
+  @media (max-width: 556px) {
+    .title {
+      font-size: 30px;
+      line-height: 1;
+    }
+  }
