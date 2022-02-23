@@ -1,4 +1,11 @@
 $(function() {
+  $('.menu__burger').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active')
+  });
+  $('.menu__list-link').on('click', function(){
+    $('.menu__list').removeClass('menu__list--active')
+  });
+
 
   $('.shop-related__items').slick({
      slidesToShow: 4,
