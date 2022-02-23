@@ -156,3 +156,59 @@
 
   }
 }
+
+
+@media (max-width: 1150px) {
+  .top-slider{
+    &__items{
+      flex-direction: column;
+      padding-top: 15px;
+    }
+    &__item{
+      align-items: center;
+      padding-left: 0;
+      height: 100px;
+      &:last-child{
+        margin-bottom: 15px;
+      }
+    }
+   .top-slider__item+.top-slider__item{
+     border-left: none;
+   }
+
+    &__text{
+      text-align: center;
+     
+    }
+      &__title-24,
+      &__title-delivery,
+      &__title-payment {
+        &::before {
+          background: none;
+        }
+      }
+  
+  }
+}
+
+@media (max-width: 991px) {
+  .top-slider{
+    &__top-item{
+      background-position: 0 0;
+    }
+
+  }
+}
+
+@media (max-width: 556px) {
+  .top-slider {
+    
+    &__top-title{
+      font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 10px;
+    max-width: 285px;
+   }
+    
+}
+}
