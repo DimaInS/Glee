@@ -35,7 +35,7 @@
   &__items {
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -95,7 +95,35 @@
       margin-right: 30px;
     }
   }
+}
 
-
-
+@media (max-width: 1200px){
+  .blog{
+    &__items{
+       justify-content: center;
+    }
+    &__item{
+      margin-bottom: 15px;
+    }
+    .blog__item+ .blog__item{
+      margin-left: 10px;
+    }
+    &__img{
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width: 556px){
+  .blog{
+    &__link{
+      top: 35px;
+    }
+  }
+}
+@media (max-width: 556px) {
+  .blog {
+    &__link {
+      top: 50px;
+    }
+  }
 }

@@ -5,3 +5,15 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 768px){
+  .video{
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 375px) {
+  .video {
+    min-height: 250px;
+  }
+}
