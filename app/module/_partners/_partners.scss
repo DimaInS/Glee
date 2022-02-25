@@ -1,11 +1,28 @@
 .partners {
   background-color: #fcd7b6;
-  height: 437px;
+  min-height: 437px;
   padding: 264px 0 92px;
 
   &__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1100px){
+  .partners{
+    padding: 180px 0 62px;
+    
+    &__items{
+      justify-content: center;
+    }
+    &__item{
+      margin-bottom: 30px;
+    }
+    .partners__item+ .partners__item {
+      margin-left: 40px;
+    }
   }
 }
