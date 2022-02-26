@@ -116,14 +116,14 @@
 @media (max-width: 556px){
   .blog{
     &__link{
-      top: 35px;
+      top: 50px;
     }
   }
 }
-@media (max-width: 556px) {
+@media (max-width: 375px) {
   .blog {
-    &__link {
-      top: 50px;
+    &__item-content {
+      padding: 0 5px;
     }
   }
 }

@@ -1,5 +1,7 @@
+@import '../module/_partners/_partners';
+
 .partners--page {
-  height: 251px;
+  min-height: 251px;
   padding: 78px 0 89px;
   background-color: #fcd7b6;
 
@@ -7,5 +9,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1100px){
+  .partners--page{
+    padding: 60px 0 50px;
+    .partners__item+.partners__item {
+      margin-left: 40px;
+    }
   }
 }
