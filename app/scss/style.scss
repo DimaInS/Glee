@@ -1692,6 +1692,15 @@
  }
 }
 
+@media (max-width: 850px){
+  .comments{
+    &-form__input-name,
+    &-form__input-mail{
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: 800px){
   .numbers{
     
@@ -1702,6 +1711,22 @@
     }
   &__item{
     margin-left: 30px;
+  }
+}
+.blog-one{
+  &__box{
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  &__box-img{
+    width: 100%;
+  }
+  &__box-text{
+    margin-left: 0;
+    padding: 15px 0;
+  }
+  h5{
+    margin-bottom: 5px;
   }
 }
 }
@@ -1723,6 +1748,32 @@
     }
     &__content-text{
       margin-bottom: 10px;
+    }
+  }
+  .blog-one{
+    h4{
+      font-size: 30px;
+      line-height: 36px;
+      margin: 25px 0 20px;
+    }
+    figure{
+      margin: 20px 0;
+      padding: 10px 20px 15px 10px;
+    }
+  }
+  .comments{
+    &__item:nth-child(even){
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 660px){
+  .blog-one{
+    &__wrapper-img{
+      display: none;
+    }
+    &__wrapper-content{
+      padding: 0;
     }
   }
 }
@@ -1772,6 +1823,19 @@
     }
 
   }
+  .blog-one{
+    &__wrapper-content{
+      flex-direction: column;
+    }
+    &__wrapper-social{
+      justify-content: flex-start;
+    }
+  }
+  .comments{
+    &__img{
+      display: none;
+    }
+  }
 }
  @media (max-width: 375px) {
    .team{
@@ -1786,6 +1850,17 @@
       &__content-title {
         margin: 12px 0 10px;
       }
+   }
+   .blog-one {
+      h4 {
+       margin: 12px 0 10px;
+     }
+
+   }
+   .comments{
+     &__content-date{
+       display: none;
+     }
    }
  }
 
