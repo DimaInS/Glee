@@ -89,7 +89,7 @@ body{
   display: flex;
   justify-content: center;
   padding-top: 75px;
-  
+  flex-wrap: wrap;
   &__list{
     display: flex;
   }

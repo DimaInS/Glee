@@ -33,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    max-width: 270px;
+    width: 270px;
     min-height: 380px;
     background-color: #ffffff;
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
@@ -98,7 +98,7 @@
       grid-gap: 30px 20px;
     }
     &__content-item{
-      max-width: 100%;
+      width: 100%;
     }
   }
 }

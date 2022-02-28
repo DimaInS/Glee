@@ -1,4 +1,8 @@
 $(function() {
+  $('.prodlist-content__btn').on('click', function(){
+    $('.prodlist__filters').slideToggle();
+  })
+
    $('.footer-top__title').on('click', function(){ //сворачивает список под заголовком
     $(this).next().slideToggle();
     $(this).toggleClass('active');
@@ -69,10 +73,12 @@ $(function() {
 
   $('.button-list').on('click', function() {
       $('.prodlist-content__item').addClass('prodlist-content__item--list');
+      $('.prodlist-content__inner').addClass('prodlist-content__nogrid');
   });
 
   $('.button-grid').on('click', function() {
       $('.prodlist-content__item').removeClass('prodlist-content__item--list');
+      $('.prodlist-content__inner').removeClass('prodlist-content__nogrid');
   });
 
   
