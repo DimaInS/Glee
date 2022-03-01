@@ -60,11 +60,47 @@
       grid-template-columns: repeat(3, 1fr);
       justify-items: center;
     
-    &-content__nogrid{
+   
+  }
+  .prodlist-content__inner.prodlist-content__nogrid{
+    display: flex;
+  }
+  }
+  .shop-slide{
+    cursor: pointer;
+    &__thumb{
+      display: none;
+    }
+    .slick-dots{
       display: flex;
+      justify-content: center;
+      margin-top: -42px;
+      li+li{
+        margin-left: 10px;
+      }
+      .slick-active button{
+          background-color: $accent-color;
+      }
+      button{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: transparent;
+        padding: 0;
+        border: 2px solid $accent-color;
+        font-size: 0;
+        color: $accent-color;
+        cursor: pointer;
+       transition: all 0.3s;
+      }
+    }
+
+  }
+  .shop-related{
+    .products__content-item{
+      width: 270px;
     }
   }
-}
 }
 
 @media (max-width: 1100px) {
@@ -115,13 +151,23 @@
 
 @media (max-width: 900px){
   .prodlist{
-    
-    
-    &-content__filter-buttons{
+     &-content__filter-buttons{
       display: none;
     }  
-
-   
+  }
+  .shop{
+    &__details{
+      flex-direction: column;
+    }
+    
+    &-slide{
+      margin-bottom: 35px;
+      margin-right: 0;
+    }
+    &-slide__big{
+      width: 100%;
+      float: none;
+    }
   }
 }
 
@@ -138,7 +184,15 @@
      grid-template-columns: repeat(2, 1fr);
    }
   }
-   
+   .shop-tabs{
+     &__top{
+       margin-bottom: 15px;
+     }
+     
+     &__top-btn{
+       margin-bottom: 10px;
+     }
+   }
 }
 
 @media (max-width: 800px) {
@@ -306,8 +360,30 @@
        grid-template-columns: repeat(1, 1fr);
      }
    }
+   .shop{
+     padding-top: 60px;
+     &__details{
+       padding-bottom: 60px;
+     }
+     &__details-title{
+       font-size: 30px;
+       line-height: 33px;
+       margin-bottom: 10px;
+       padding-top: 0;
+     }
+     &__details-price {
+       padding-top: 35px;
+       margin-bottom: 10px;
+       font-size: 26px;
+       line-height: 30px;
+       padding-top: 15px;
+    }
+    &__details-btn{
+      display: block;
+      margin: 15px 0;
+    }
 }
-
+}
 @media (max-width: 375px) {
   .team {
     &__member {

@@ -20,8 +20,30 @@ $(function() {
      slidesToShow: 4,
         slidesToscroll: 1,
         infinite: false,
+        
         prevArrow: '<button type="button" class="slick-prev"><img src="images/icon/arrow-prev.svg"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="images/icon/arrow-next.svg"</button>'
+        nextArrow: '<button type="button" class="slick-next"><img src="images/icon/arrow-next.svg"</button>',
+        responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+         slidesToShow: 3,
+      }
+    },
+     {
+      breakpoint: 900,
+      settings: {
+         slidesToShow: 2,
+        
+      }
+    },
+    {
+      breakpoint: 660,
+      settings: {
+         slidesToShow: 1,
+      }
+    },
+  ]
   })
 
   $('.shop-tabs__top-btn').on('click', function(e) {
@@ -54,6 +76,15 @@ $(function() {
         fade: true,
         slidesToShow: 1,
         slidesToscroll: 1,
+         responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        draggable: true,
+        dots: true
+      }
+    }
+  ]
   });
 
 
