@@ -102,6 +102,19 @@
       width: 270px;
     }
   }
+  .contact__top{
+    &-items{
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+    &-item{
+      margin-bottom: 20px;
+    }
+    .contact__top-item+.contact__top-item{
+      margin-left: 20px;
+    }
+  }
 }
 
 @media (max-width: 1100px) {
@@ -121,6 +134,20 @@
 
   .numbers {
     margin: 10px 0;
+  }
+  .contact{
+    &__bottom-inner{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    #map{
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    &-form{
+      max-width: 100%;
+      margin-right: 0;
+    }
   }
 
 }
@@ -227,6 +254,11 @@
 
     h5 {
       margin-bottom: 5px;
+    }
+  }
+  .contact__top {
+    .contact__top-item+.contact__top-item {
+      margin-left: 5px;
     }
   }
 }
@@ -384,8 +416,8 @@
       margin: 15px 0;
     }
 
-}
-.shop-related{
+  }
+  .shop-related{
   .slick-arrow{
     top: -15%;
     width: 40px;
@@ -398,7 +430,11 @@
     left: 0;
     z-index: 15;
   }
-}
+  }
+
+  #map{
+    height: 240px;
+  }
 }
 @media (max-width: 375px) {
   .team {
