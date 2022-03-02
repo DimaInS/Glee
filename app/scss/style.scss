@@ -1397,7 +1397,7 @@
     margin-bottom: 55px;
   }
 
-  &__details-list {}
+ 
 
   &__details-item {
     display: flex;
@@ -1413,7 +1413,7 @@
     margin-right: 5px;
   }
 
-  &__details-item-text {}
+  
 
   &__details-item-link {
     @extend %rubik-400;
@@ -1599,16 +1599,20 @@
 
   &__item {
     height: 420px;
+    // text-align: center;
   }
 
   .products__content-item{
   min-height: 380px;
+  margin: 0 auto;
 }
 
 .products__content-links{
   transform: translateY(350%);
 }
-
+.slick-list{
+  overflow: hidden;
+}
 .slick-arrow{
   display: flex;
   justify-content: center;

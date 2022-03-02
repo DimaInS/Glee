@@ -58,6 +58,7 @@
     &-content__inner{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
       justify-items: center;
     
    
@@ -382,6 +383,21 @@
       display: block;
       margin: 15px 0;
     }
+
+}
+.shop-related{
+  .slick-arrow{
+    top: -15%;
+    width: 40px;
+    height: 40px;
+  }
+  .slick-next{
+    right: 0;
+  }
+  .slick-prev{
+    left: 0;
+    z-index: 15;
+  }
 }
 }
 @media (max-width: 375px) {
